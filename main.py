@@ -9,6 +9,11 @@ def get_birthdays_per_week(users):
 if __name__ == "__main__":
     users = [
         {"name": "Jan Koum", "birthday": datetime(1976, 1, 1).date()},
+        {"name": "Gog Koum", "birthday": datetime(1971, 12, 31).date()},
+        {"name": "Mike Koum", "birthday": datetime(1976, 12, 29).date()},
+        {"name": "Kola Koum", "birthday": datetime(1976, 1, 1).date()},
+        {"name": "Pet Koum", "birthday": datetime(1976, 1, 1).date()},
+        {"name": "Jude Koum", "birthday": datetime(1976, 1, 1).date()},
     ]
 
     result = get_birthdays_per_week(users)
