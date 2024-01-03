@@ -100,7 +100,6 @@ class TestGetBirthdaysPerWeek(unittest.TestCase):
             {"name": "Alice", "birthday": (self.today + timedelta(days=3)).date()},
         ]
         result = get_birthdays_per_week(users)
-        print(result)
         expected = {"Monday": ["John", "Doe"], "Friday": ["Alice"]}
         assert (
             result == expected
@@ -127,7 +126,6 @@ class TestGetBirthdaysPerWeek(unittest.TestCase):
             },
         ]
         result = get_birthdays_per_week(users)
-        print(result)
         expected = {
             "Monday": ["Alice"],
         }
@@ -154,7 +152,6 @@ class TestGetBirthdaysPerWeek(unittest.TestCase):
             {"name": "Alice", "birthday": (self.today + timedelta(days=-3)).date()},
         ]
         result = get_birthdays_per_week(users)
-        print(result)
         expected = {"Wednesday": ["John"], "Friday": ["Doe"]}
         assert (
             result == expected
